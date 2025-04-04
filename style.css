@@ -1,0 +1,51 @@
+            body {
+                display: flex;
+                flex-direction: column;
+                width: 1350px;
+                height: 750px;
+                justify-content: space-around;
+                align-items: center;
+                background-color: rgba(247, 247, 247, 0.934);
+            }
+            .main {
+                background-color: rgb(20, 2, 84);
+                height : 500px;
+                width: 500px;
+                white-space: nowrap;
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+                box-shadow: 0 0 10px grey;
+                border-radius: 10px;
+            }
+            .text {
+                width: 1fr;
+                height: 40px;
+                font-family: Arial;
+                font-size: 30px;
+                color: rgb(255, 246, 165);
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-top: 5px;
+                padding-left: 5px;
+                display: inline-block;
+                white-space: nowrap;
+                animation: marquee 10s linear infinite ;
+            }
+            @keyframes marquee {
+                from {
+                transform: translateX(310%);
+            }
+                to {
+                transform: translateX(-100%);
+            }
+            }
+            .image {
+                height: 500px;
+                width: 1fr;
+            }
+            .moon-img {
+                width: 500px;
+                object-fit: cover;
+                object-position: center;
+            }
